@@ -34,7 +34,7 @@ for i in range(0, len(rgb_values), 3):
 # Save the binary data as a file
 with open(output_file_path, 'wb') as binary_file:
     print("Decompressing binary data...")
-    decompressed_data = zlib.decompress(binary_data)
+    decompressed_data = binary_data # zlib.decompress(binary_data)
     print("Saving binary data to output file...")
     binary_file.write(decompressed_data)
     print(f"Output saved as {output_file_path}")
